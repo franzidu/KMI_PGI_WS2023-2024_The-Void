@@ -1,0 +1,7 @@
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/Uebung-12.dir
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/edit_cache.dir
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/rebuild_cache.dir
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/list_install_components.dir
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/install.dir
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/install/local.dir
+/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-12-Desktop_arm_darwin_generic_mach_o_32bit-Debug/CMakeFiles/install/strip.dir

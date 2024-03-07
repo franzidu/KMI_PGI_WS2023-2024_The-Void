@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b8143d7d5b8b95284695.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Uebung-7",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Uebung-7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Uebung-7-Debug-42eafa573d2cbb7dc761.json",
+					"name" : "Uebung-7",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-7-Desktop_arm_darwin_generic_mach_o_32bit-Debug",
+		"source" : "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/Uebung-7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

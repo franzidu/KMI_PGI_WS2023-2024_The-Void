@@ -1,0 +1,185 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Uebung-4
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/franzi/Workspace/HDA$ MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target Uebung-4
+
+
+#############################################
+# Order-only phony target for Uebung-4
+
+build cmake_object_order_depends_target_Uebung-4: phony || CMakeFiles/Uebung-4.dir
+
+build CMakeFiles/Uebung-4.dir/main.c.o: C_COMPILER__Uebung-4_Debug /Users/franzi/Workspace/HDA$ MAC/GitHub/kmi_programmieren-1/Uebung-4/main.c || cmake_object_order_depends_target_Uebung-4
+  DEP_FILE = CMakeFiles/Uebung-4.dir/main.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/Uebung-4.dir
+  OBJECT_FILE_DIR = CMakeFiles/Uebung-4.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Uebung-4.dir/
+  TARGET_PDB = Uebung-4.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Uebung-4
+
+
+#############################################
+# Link the executable Uebung-4
+
+build Uebung-4: C_EXECUTABLE_LINKER__Uebung-4_Debug CMakeFiles/Uebung-4.dir/main.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/Uebung-4.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/Uebung-4.dir/
+  TARGET_FILE = Uebung-4
+  TARGET_PDB = Uebung-4.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug" && /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/bin/ccmake -S"/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/Uebung-4" -B"/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug" && /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/bin/cmake --regenerate-during-build -S"/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/Uebung-4" -B"/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug" && /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug" && /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug" && /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/franzi/Workspace/HDA MAC/GitHub/kmi_programmieren-1/build-Uebung-4-Desktop_arm_darwin_generic_mach_o_32bit-Debug
+
+build all: phony Uebung-4
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | .qtc/package-manager/auto-setup.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeNinjaFindMake.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/franzi/Workspace/HDA$ MAC/GitHub/kmi_programmieren-1/Uebung-4/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build .qtc/package-manager/auto-setup.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeNinjaFindMake.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/franzi/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/franzi/Workspace/HDA$ MAC/GitHub/kmi_programmieren-1/Uebung-4/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

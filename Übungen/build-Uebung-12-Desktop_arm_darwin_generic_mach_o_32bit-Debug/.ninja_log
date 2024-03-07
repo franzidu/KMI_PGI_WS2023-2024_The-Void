@@ -1,0 +1,7 @@
+# ninja log v5
+0	304	1708945654663938704	CMakeFiles/Uebung-12.dir/main.cpp.o	e6144305cc3fec14
+1	383	1708945654741815006	CMakeFiles/Uebung-12.dir/fruit.cpp.o	b3b4b411adc58266
+0	385	1708945654743300414	CMakeFiles/Uebung-12.dir/application.cpp.o	377f7f0fa8b2fe97
+1	385	1708945654743426913	CMakeFiles/Uebung-12.dir/fruitlist.cpp.o	aff525f5ea605fbe
+1	422	1708945654780277181	CMakeFiles/Uebung-12.dir/fruitbasket.cpp.o	f69515f291463492
+422	468	1708945654828575419	Uebung-12	faca8512e26897e9
